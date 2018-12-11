@@ -12,7 +12,7 @@
    
     <main>
         <h2>
-            Solent Restaurants
+            So
         </h2>
         <form action="xxx.php" method="POST">
             <br> Name:

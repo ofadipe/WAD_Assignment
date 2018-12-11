@@ -11,6 +11,7 @@
 <form method="post" action="poisearchservice.php">
 
  <p>
+ 
       <a href='addpoi2.php'> Add New Point of Interest</a>
 </p>
 
