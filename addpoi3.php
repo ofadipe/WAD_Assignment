@@ -20,7 +20,7 @@
 $connection = curl_init();
 // curl_setopt($connection,CURLOPT_USERPWD,"$username:$password");
 // Remember to change the link to apporoiate link when get username
-curl_setopt($connection, CURLOPT_URL, "https://edward2.solent.ac.uk/~ofadipe/addpoi.php.php");
+// curl_setopt($connection, CURLOPT_URL, "https://edward2.solent.ac.uk/~ofadipe/addpoi.php.php");
 $dataToPost = 
     ["id" => $id];
 curl_setopt($connection,CURLOPT_RETURNTRANSFER,1);

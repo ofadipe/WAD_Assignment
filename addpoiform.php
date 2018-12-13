@@ -12,9 +12,9 @@
    
     <main>
         <h2>
-            So
+            Add Point of Interest
         </h2>
-        <form action="xxx.php" method="POST">
+        <form action="addpoi.php" method="POST">
             <br> Name:
             <br>
             <input type="text" name="name">
@@ -32,7 +32,7 @@
             <input type="text" name="lat">
             <br> Lon:
             <br>
-            <input type="text" name="Lon">
+            <input type="text" name="lon">
             
             <br>
 
