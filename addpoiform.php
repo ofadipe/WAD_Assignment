@@ -4,7 +4,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-a8">
     <title>Point of Interest</title>
 </head>
 
@@ -18,23 +18,27 @@
             <br> Name:
             <br>
             <input type="text" name="name">
-            <br> Address:
+            <br> type:
             <br>
-            <input type="text" name="address">
+            <input type="text" name="type">
             <br> Country:
             <br>
             <input type="text" name="country">
             <br> Region:
             <br>
             <input type="text" name="region">
-            <br> Lat:
-            <br>
-            <input type="text" name="lat">
             <br> Lon:
             <br>
             <input type="text" name="lon">
+            <br> Lat:
+            <br>
+            <input type="text" name="lat">
+            
+            <br> Description:
+            <input type="text" name="description">
             
             <br>
+
 
 
             <input type="submit" value="Add Point of Interest">
