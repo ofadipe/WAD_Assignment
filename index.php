@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Point of Interest </title>
+    <title>Point of Interest Assignment Index </title>
 </head>
 <body>
-    <h1>POI Web Service</h1>
-<form method="post" action="poisearchservice.php">
+<h1>The tasks</h1>
 
  <p>
- 
-      <a href='addpoi2.php'> Add New Point of Interest</a>
+     <a href='https://edward2.solent.ac.uk/~wad1802/poisearchservice.php?type=pub&region=hampshire'> Task 1 and 2</a>
+     <a href='' > Task 3</a>
+     
 </p>
 
 
