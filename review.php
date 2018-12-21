@@ -8,7 +8,7 @@ header("Content-type: application/json");
 
 
 $conn = new PDO("mysql:host=localhost;dbname=ofadipe;", "ofadipe","ieBae1ve");
-$conn->query("INSERT INTO poi_reviews(id, poi_id, review)  VALUES('$name', '$poi_id', '$reviews')");
+$conn->query("INSERT INTO poi_reviews (id, poi_id, review)  VALUES('$name', '$poi_id', '$reviews')");
 
 
 ?>

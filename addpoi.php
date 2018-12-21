@@ -10,6 +10,8 @@ $lat = $_POST["lat"];
 $description = $_POST["description"];
 
 
+
+
 $conn = new PDO("mysql:host=localhost;dbname=ofadipe;", "ofadipe","ieBae1ve");
 $conn->query("INSERT INTO pointsofinterest(name, type, country, region, lon, lat, description)  VALUES('$name', '$type', '$country', '$region', '$lon', '$lat', '$description')"); 
  echo "INSERT INTO pointsofinterest(name, type, country, region, lon, lat, description)  VALUES('$name', '$type', '$country', '$lon', '$lat', '$description')";

@@ -14,7 +14,7 @@
         <h2>
             Add Review
         </h2>
-        <form action="addreviewform.php" method="POST">
+        <form action="reviewform.php" method="POST">
             <br> Name:
             <br>
             <input type="text" name="name">
