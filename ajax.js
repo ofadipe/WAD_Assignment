@@ -14,6 +14,7 @@ function init() {
 function sendAjax() {
     // Read in the input from the region form
     var a = document.getElementById('region').value;
+    var b = document.getElementById('type').value;
 
     // Set up our AJAX connection variable (this is an object, for those of you who have done OO programming)
     var ajaxConnection = new XMLHttpRequest();
@@ -40,7 +41,8 @@ function sendAjax() {
 
     // Open the connection to a given remote URL.
   //  (this need to be edited to correct URL)
-    ajaxConnection.open("GET", `https://poi.com/webservice.php?poi=${a}`);
+  ajaxConnection.open("GET" , `https://edward2.solent.ac.uk/~wad1802/poisearchservice.php?type=pub&region=${a}`);
+
 
     // Send the request.
     ajaxConnection.send();
