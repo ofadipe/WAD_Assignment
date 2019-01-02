@@ -8,11 +8,13 @@
 </head>
 <body>
 <body onload="init()">
-	<header>
+	<!--
+    <header>
+    
 		<h1>Welcome to Points Of Interest</h1>
 		<a href="https://edward2.solent.ac.uk/~wad1802/">Back to the assignment page 😀 </a>
 	</header>
-	
+	-->
 	<main>
 	<div class="searchform">
 			
@@ -31,6 +33,7 @@
 
 
             <input type="submit" value="Search Point of Interest">
+            <div id='responseDiv'></div>
         </form>
 	</div>
 
@@ -65,7 +68,7 @@
             <input type="submit" value="Add Point of Interest">
         </form>
 	</div>
-    
+    <!--
       <div id="responseDiv">
 		<h2>Search Results</h2>
 	  </div>
@@ -77,7 +80,7 @@
 		</div>
 	<br>
 		</main>
-	
+	-->
 	<footer>
 	<p> Oluwaseun Fadipe - Web Application Development (SWD601) - PointsOfInterest (AE2)</p>
 	</footer>
