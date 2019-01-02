@@ -72,3 +72,38 @@ var myObject = new Vue({
     data: {message: 'Hello Vue!'}
 })
 </script>
+
+
+
+function init() {
+    document.getElementById("btn1").addEventListener("click", sendAjax);
+}
+//This reads in the input from the form in httracks 
+function sendAjax() {
+    var a = document.getElementById('artist').value;
+
+    var ajaxConnection = new XMLHttpRequest();
+
+    ajaxConnection.addEventListener("load", e => {
+            var output = "";
+
+            var allSongs = JSON.parse(e.target.responseText);
+
+            //This add details of the songs
+
+            allSongs.forEach(curSong => {
+            
+                output = output + `Artist: ${curSong.artist} Song: ${curSong.title} <br /> `;
+                
+                document.getElementById("responseDiv").innerHTML = output;
+            });
+
+        }
+
+    )
+        
+    ajaxConnection.open("GET", `https://edward2.solent.ac.uk/~ofadipe/htwebservice.php?artist=${a}`);
+
+    // Send the request.
+    ajaxConnection.send();
+}

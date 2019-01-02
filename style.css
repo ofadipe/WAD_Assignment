@@ -1,0 +1,16 @@
+.result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 1%;
+    background: #000;
+    color: #fff;
+    width: 23%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#responseDiv {
+    display: flex;
+    flex-wrap: wrap;
+}

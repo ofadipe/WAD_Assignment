@@ -1,20 +1,26 @@
-// JavaScript file, ajax1.js
+// JavaScript file, ajax.js
 function init() {
 
 
     // For simplicity, we're specifying that when the button clicks,
     // a regular callback function 'sendAjax' will run, rather than an arrow function.
-    // This is because we are using an arrow function in our AJAX code as well, and I don't
-    // want to overcomplicate things at this stage by having too many arrow functions inside other arrow functions!
+    // This is because we are using an arrow function in our AJAX code as well
+
 
     document.getElementById("btn1").addEventListener("click", sendAjax);
+    // This allows users to press enter, because it adds an event lister for a key press 
+    document.querySelector('#btn1').addEventListener('keypress', function (e) 
+    {    
+        e.preventDefault();
+        if (e.key === 'Enter') 
+    {   sendAjax()     } });
 
 }
-
+//This reads in the input from the form in Point of Interest 
 function sendAjax() {
     // Read in the input from the region form
     var a = document.getElementById('region').value;
-    var b = document.getElementById('type').value;
+  //  var b = document.getElementById('type').value;
 
     // Set up our AJAX connection variable (this is an object, for those of you who have done OO programming)
     var ajaxConnection = new XMLHttpRequest();
@@ -23,25 +29,58 @@ function sendAjax() {
     ajaxConnection.addEventListener ("load",e =>
         {
           // Check if its curPOI or curRegion
-             var output = ""; // initialise output to blank text
-             var allPOIs = JSON.parse(e.target.responseText);
 
+          var allPOIs = JSON.parse(e.target.responseText);
+          let resultsContainer = document.getElementById('responseDiv'); 
 
              // Loop through each
              allPOIs.forEach( curPOI =>
                     {
-                        // add the details of the current flight to the "output" variable
-                        output = output + `poi name: ${curPOI.name} type: ${curPOI.type} region: ${curPOI.region} country: ${curPOI.country} lat: ${curPOI.lat} lon: ${curPOI.lon} <br /> `;
-                    } );
-            // Put the HTML output into the results div (up to you to do!)
-            var w = document.getElementById("response").innerHTML = output;
+    // This is a different technique that create DOM elements.                         
+                    let resultsBox = document.createElement("div"); //#endregion
 
-        });
+                    resultsBox.className = 'result';
+
+                    let nameLine = document.createElement('h3');
+                    nameLine.innerHTML = curPOI.name;
+
+                    let typeLine = document.createElement('h4');
+                    typeLine.innerHTML = curPOI.type
+
+                    let regionLine = document.createElement('p');
+                    regionLine.innerHTML = curPOI.region
+
+                    let countryLine = document.createElement('p');
+                    countryLine.innerHTML = curPOI.country
+
+                    let lonLine = document.createElement('p');
+                   lonLine.innerHTML = 'Lon:'+ curPOI.lon;
+
+                   let latLine = document.createElement('p');
+                   latLine.innerHTML = 'Lat:'+ curPOI.lat;
+
+                        resultsBox.append(nameLine);
+                        resultsBox.append(typeLine);
+                        resultsBox.append(regionLine);
+                        resultsBox.append(countryLine);
+                        resultsBox.append(lonLine);
+                        resultsBox.append(latLine);
+
+                        resultsContainer.append(resultsBox);
+
+
+
+
+
+            
+                    } );
+           console.log(output);
+        })
 
 
     // Open the connection to a given remote URL.
   //  (this need to be edited to correct URL)
-  ajaxConnection.open("GET" , `https://edward2.solent.ac.uk/~wad1802/poisearchservice.php?type=pub&region=${a}`);
+  ajaxConnection.open("GET" , `https://edward2.solent.ac.uk/~wad1802/poisearchservice.php?region=${a}`);
 
 
     // Send the request.

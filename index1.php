@@ -10,7 +10,8 @@
 <h1>The tasks</h1>
 
  <p>
-     <a href='https://edward2.solent.ac.uk/~wad1802/poisearchservice.php?type=pub&region=hampshire'> Task 1 and 2</a>
+     <!-- Had to make a dummy web service to --> 
+     <a href='https://edward2.solent.ac.uk/~wad1802/poisearchservice1.php?type=pub&region=hampshire'> Task 1 and 2 it searches pubs in hampshire</a>
      <a href='https://edward2.solent.ac.uk/~wad1802/addpoi.php' > Task 3</a>
      <a href='https://edward2.solent.ac.uk/~wad1802/ajax.js' > Task 5</a>
 

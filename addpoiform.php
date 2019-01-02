@@ -33,7 +33,6 @@
             <br> Lat:
             <br>
             <input type="text" name="lat">
-            
             <br> Description:
             <input type="text" name="description">
             

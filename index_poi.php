@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type='text/javascript' src='ajax.js'></script>
+
     <title>Point of Interest</title>
 </head>
 <body>
 <body onload="init()">
 	<!--
+
+    I will do this at the end
     <header>
     
 		<h1>Welcome to Points Of Interest</h1>
@@ -16,28 +20,17 @@
 	</header>
 	-->
 	<main>
+
 	<div class="searchform">
-			
-        <h2>
-           Search Point of Interest
-        </h2>
-            <form action="poisearchservice.php" method="POST">
-                <br> Region:
-                <br>
-                <input type="text" name="region">
-                <br> Type:
-                <br>
-                <input type="text" name="type">
-                
-                <br>
+        <h2>Search Point of Interest</h2>
 
-
-            <input type="submit" value="Search Point of Interest">
+            Region: <input id='region' />
+            <input type='button' id='btn1' value='Search Point of Interest' />
             <div id='responseDiv'></div>
-        </form>
+      
 	</div>
 
-    <!-- Add the Form from the other file -->
+
 			<div class="addform">
             <h2>
             Add Point of Interest
@@ -68,22 +61,8 @@
             <input type="submit" value="Add Point of Interest">
         </form>
 	</div>
-    <!--
-      <div id="responseDiv">
-		<h2>Search Results</h2>
-	  </div>
-			<div id="responseDiv2">
-		<h2>Your Search Results on a Map</h2>
-		<div id="map1"></div>
-		<br>
-		<br>
-		</div>
-	<br>
-		</main>
-	-->
-	<footer>
-	<p> Oluwaseun Fadipe - Web Application Development (SWD601) - PointsOfInterest (AE2)</p>
-	</footer>
+   
+	
 </body>
 </html>
 

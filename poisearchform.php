@@ -18,14 +18,11 @@
             <br> Region:
             <br>
             <input type="text" name="region">
-            <br> Type:
-            <br>
-            <input type="text" name="type">
             
             <br>
 
 
-            <input type="submit" value="Search Point of Interest">
+            <input type="button" id='btn1' value="Search Point of Interest">
         </form>
     </main>
 

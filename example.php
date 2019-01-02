@@ -17,7 +17,12 @@
 
  }
   
-
+ <body onload='init()'>
+ <h1>Test AJAX Page</h1>
+ Destination: <input id='destination' />
+ Date: <input id='date' />
+ <input type='button' id='btn1' value='Search for flights!!' />
+ <div id='responseDiv'></div>
 
  Region: <input id='region' />
 
@@ -39,3 +44,10 @@
     
 </body>
 </html>
+
+
+<body onload='init()'>
+<h1>Search Point of Interest</h1>
+Region: <input id='region' />
+<input type='button' id='btn1' value='Search Point of Interest' />
+<div id='responseDiv'></div>
