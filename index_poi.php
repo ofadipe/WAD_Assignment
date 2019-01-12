@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type='text/javascript' src='ajax.js'></script>
-    <script type='text/javascript' src='/wad/leaflet/leaflet.js'></script>
-    <script type='text/javascript' src='mapapp.js'></script>
+    <script type='text/javascript' src='22AJAX.js'></script>
     <link rel='stylesheet' type='text/css' href='/wad/leaflet/leaflet.css' />
+    <script type='text/javascript' src='/wad/leaflet/leaflet.js'></script>
 
     <title>Point of Interest</title>
 </head>
@@ -27,14 +26,6 @@
 	-->
         <main>
 
-            <div class="searchform">
-                <h2>Search Point of Interest</h2>
-
-                Region: <input id='region' />
-                <input type='button' id='btn1' value='Search Point of Interest' />
-                <div id='responseDiv'></div>
-
-            </div>
 
 
             <div class="addform">
@@ -67,17 +58,17 @@
                     <input type="submit" value="Add Point of Interest">
                 </form>
             </div>
-            <div id='map'>
-            
-                <input type='text' placeholder='Search Regions' id='region'>
-                <input type='button' id='btn2' value='Find Location'>
-
-                <div id="resultsDiv">
-
-                </div>
+            <div class="mapping">
 
                 <div id="map1" style="width:800px; height:600px"> </div>
+            </div>
 
+            <div class="searchform">
+                <h2>Search Point of Interest</h2>
+
+                Region: <input id='region' />
+                <input type='button' id='btn1' value='Search Point of Interest' />
+                <div id='responseDiv'></div>
     </body>
 
 </html>
