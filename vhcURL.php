@@ -20,15 +20,7 @@ curl_setopt($connection,CURLOPT_HEADER, 0);
 // returned from curl_exec() and placed in $response.
 $response = curl_exec($connection);
 
-curl_exec($connection);
-if (curl_error($connection)) {
-    $error_msg = curl_error($connection);
-}
-curl_close($connection);
-
-if (isset($error_msg)) {
-    echo $error_msg;
-}
+ 
 
 
 // Echo the response back from the server (for illustration purposes)
